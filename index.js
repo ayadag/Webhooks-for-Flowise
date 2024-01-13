@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 
 app.post("/api/v1/prediction/49a1fa06-e4df-4218-9911-008da1eb5620", (req, res) => {
 
-  res.send("{
+  res.send({
     "body": {
         "text": "The title of this document is \"The Art of Goal Setting: Achieving Success through Personal Development.\""
     },
@@ -30,7 +30,7 @@ app.post("/api/v1/prediction/49a1fa06-e4df-4218-9911-008da1eb5620", (req, res) =
         "server": "cloudflare",
         "alt-svc": "h3=\":443\"; ma=86400"
     }
-}")
+})
  
 })
 app.listen(port, () => console.log("server running"));
